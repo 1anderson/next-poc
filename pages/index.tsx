@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,110 +14,70 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header className='flex flex-row w-full justify-between px-24' >
+      <div>
+        <img src='/logo.jpg' className='w-1/2'></img>
+      </div>
+      <nav className='flex flex-row w-1/2 justify-end'>
+      <div className={styles.topnav}>
+        <Link  href="/">Home</Link>
+        <Link  href="/about">About</Link>
+      </div>
+
+      </nav>
+      </header>
       <main className={styles.main}>
-        <div className={styles.description}>
+
+      <section className='flex flex-row w-full pb-36' >
+          <article className='flex justify-around w-1/2'>
+          <hr className={styles.highlighter + ' w-1/12'}/>
+          <p className={'w-10/12'}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but 
+           </p>
+          </article>
+          <aside className='w-1/2'>
+          <figure>
+          <img src='/teenage.jpg' className={styles.image}></img>
+          </figure>
+          <h2 className={styles.subTitle}> WHAT IS LOREM IPSUM?</h2>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but 
           </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+          </aside>
+      </section>
+      <section className='flex flex-row w-full pb-6'>
+      <aside className='w-1/2'>
+          <figure>
+          <img src='/home.jpg' className={styles.image}></img>
+          </figure>
+          <h2 className={styles.subTitle}> WHAT IS LOREM IPSUM?</h2>
+          <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but 
+          </p>
+          </aside>
+          <article className='flex justify-around w-1/2'>
+          <hr className={styles.highlighter + ' w-1/12'}/>
+          <p className={'w-10/12'}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but 
+           </p>
+          </article>
+      </section>
       </main>
+      <footer className={styles.footer + ' flex w-full items-center	px-24'}>
+        Footer
+      </footer>
     </>
   )
 }

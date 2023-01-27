@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
       <header className='flex flex-row w-full justify-between px-24' >
       <div>
-        <img src='/next-poc/logo.jpg' className='w-1/2'></img>
+        <Image src='/logo.jpg' className='w-1/2'></Image>
       </div>
       <nav className='flex flex-row w-1/2 justify-end'>
       <div className={styles.topnav}>
@@ -40,7 +41,7 @@ export default function Home() {
           </article>
           <aside className='w-1/2'>
           <figure>
-          <img src='/next-poc/teenage.jpg' className={styles.image}></img>
+          <Image src='/teenage.jpg' alt='' className={styles.image} />
           </figure>
           <h2 className={styles.subTitle}> WHAT IS LOREM IPSUM?</h2>
           <p>

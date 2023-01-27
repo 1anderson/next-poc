@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <header className='flex flex-row w-full justify-between px-24' >
       <div>
-        <Image src='/logo.jpg' alt='' className='w-1/2'></Image>
+        <Image src='/logo.jpg' alt='' width={200} height={200} className='w-1/2'></Image>
       </div>
       <nav className='flex flex-row w-1/2 justify-end'>
       <div className={styles.topnav}>
@@ -41,7 +41,7 @@ export default function Home() {
           </article>
           <aside className='w-1/2'>
           <figure>
-          <Image src='/teenage.jpg' alt='' className={styles.image} />
+          <Image src='/teenage.jpg' alt='' width={1000} height={600}  className={styles.image} />
           </figure>
           <h2 className={styles.subTitle}> WHAT IS LOREM IPSUM?</h2>
           <p>
@@ -55,7 +55,7 @@ export default function Home() {
       <section className='flex flex-row w-full pb-6'>
       <aside className='w-1/2'>
           <figure>
-          <img src='/next-poc/home.jpg' className={styles.image}></img>
+          <Image src='/home.jpg' alt='' width={1000} height={600} className={styles.image}></Image>
           </figure>
           <h2 className={styles.subTitle}> WHAT IS LOREM IPSUM?</h2>
           <p>

@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <header className='flex flex-row w-full justify-between px-24' >
       <div>
-        <Image src='/logo.jpg' className='w-1/2'></Image>
+        <Image src='/logo.jpg' alt='' className='w-1/2'></Image>
       </div>
       <nav className='flex flex-row w-1/2 justify-end'>
       <div className={styles.topnav}>

@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false
+let assetPrefix = ''
+let basePath = '/'
+let nextConfig = {reactStrictMode: true}
+if (isGithubActions) {
+  nextConfig = {...nextConfig, ...{assetPrefix: `/${next-poc}/`,
+  basePath: `/${next-poc}`}}
+}
+console.log(nextConfig)
 module.exports = nextConfig

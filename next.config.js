@@ -5,8 +5,10 @@ let assetPrefix = ''
 let basePath = '/'
 let nextConfig = {reactStrictMode: true}
 if (isGithubActions) {
-  nextConfig = {...nextConfig, ...{assetPrefix: `/${next-poc}/`,
-  basePath: `/${next-poc}`}}
+  nextConfig.assetPrefix = `/${next-poc}/`;
+  nextConfig.basePath =  `/${next-poc}`;
+  // nextConfig = {...nextConfig, ...{assetPrefix: `/${next-poc}/`,
+  // basePath: `/${next-poc}`}}
 }
-console.log(nextConfig)
+console.log(nextConfig,process.env.GITHUB_ACTIONS)
 module.exports = nextConfig

@@ -54,7 +54,7 @@ export default function Home() {
       <section className='flex flex-row w-full pb-6'>
       <aside className='w-1/2'>
           <figure>
-          <img src='/home.jpg' className={styles.image}></img>
+          <img src='/next-poc/home.jpg' className={styles.image}></img>
           </figure>
           <h2 className={styles.subTitle}> WHAT IS LOREM IPSUM?</h2>
           <p>

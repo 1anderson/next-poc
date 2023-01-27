@@ -40,7 +40,7 @@ export default function Home() {
           </article>
           <aside className='w-1/2'>
           <figure>
-          <img src='/teenage.jpg' className={styles.image}></img>
+          <img src='/next-poc/teenage.jpg' className={styles.image}></img>
           </figure>
           <h2 className={styles.subTitle}> WHAT IS LOREM IPSUM?</h2>
           <p>

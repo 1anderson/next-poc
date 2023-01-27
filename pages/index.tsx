@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <header className='flex flex-row w-full justify-between px-24' >
       <div>
-        <img src='/logo.jpg' className='w-1/2'></img>
+        <img src='/next-poc/logo.jpg' className='w-1/2'></img>
       </div>
       <nav className='flex flex-row w-1/2 justify-end'>
       <div className={styles.topnav}>

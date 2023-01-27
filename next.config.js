@@ -5,8 +5,8 @@ let assetPrefix = ''
 let basePath = '/'
 let nextConfig = {reactStrictMode: true}
 if (isGithubActions) {
-  nextConfig.assetPrefix = `/${next-poc}/`;
-  nextConfig.basePath =  `/${next-poc}`;
+  nextConfig.assetPrefix = `next-poc`;
+  nextConfig.basePath =  `next-poc`;
   // nextConfig = {...nextConfig, ...{assetPrefix: `/${next-poc}/`,
   // basePath: `/${next-poc}`}}
 }

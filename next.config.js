@@ -3,7 +3,9 @@
 const isGithubActions = process.env.GITHUB_ACTIONS || false
 let assetPrefix = ''
 let basePath = '/'
-let nextConfig = {reactStrictMode: true}
+let nextConfig = {reactStrictMode: true, images: {
+  unoptimized : true
+}}
 if (isGithubActions) {
   nextConfig.assetPrefix = `/next-poc/`;
   nextConfig.basePath =  `/next-poc`;
